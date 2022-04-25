@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CTATracker/app/src/main/res/layout/activity_arrivals.xml" value="0.28442028985507245" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/headerlayout.xml" value="0.29635416666666664" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/headerlayoutSE.xml" value="0.3104166666666667" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/headerlayoutse.xml" value="0.3223958333333333" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/list.xml" value="0.33541666666666664" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/nextstop.xml" value="0.25" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/stations.xml" value="0.2595108695652174" />
+        <entry key="..\:/CTATracker/app/src/main/res/layout/timelist.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
