@@ -66,18 +66,107 @@ public class Arrivals extends AppCompatActivity {
                   //  SEHead.setText("Service toward 95th/Dan Ryan");
                     LC="Red Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40900"); }
+                    else if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41190"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40100"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41300"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40760"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40880"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41380"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41200"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40540"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40080"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41420"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41320"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41220"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40650"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40630"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41450"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40330"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41660"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41090"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40450"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41490"); }
+                    else if (station == 20) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41400"); }
+                    else if (station == 21) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41000"); }
+                    else if (station == 22) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40190"); }
+                    else if (station == 23) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41230"); }
+                    else if (station == 24) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41170"); }
+                    else if (station == 25) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40910"); }
+                    else if (station == 26) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40990"); }
+                    else if (station == 27) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40240"); }
+                    else if (station == 28) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41430"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40450"); }
+
                 }
                 else if (lineColor==1) { //Blue Line
                    // NWHead.setText("Service toward O'Hare");
                    // SEHead.setText("Service toward Forest Park");
                     LC="Blue Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40890"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40820"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40230"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40750"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41280"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41330"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40550"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41240"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40060"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41020"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40570"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40670"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40590"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40320"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41410"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40490"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40370"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40790"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40070"); }
+                    else if (station == 20) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41340"); }
+                    else if (station == 21) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40430"); }
+                    else if (station == 22) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40350"); }
+                    else if (station == 23) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40470"); }
+                    else if (station == 24) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40810"); }
+                    else if (station == 25) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40220"); }
+                    else if (station == 26) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40250"); }
+                    else if (station == 27) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40920"); }
+                    else if (station == 28) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40970"); }
+                    else if (station == 29) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40010"); }
+                    else if (station == 30) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40180"); }
+                    else if (station == 31) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40980"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40390"); }
                 }
                 else if (lineColor==2) { //Brown Line
                    // NWHead.setText("Service toward Kimball");
                    // SEHead.setText("Service toward Loop");
                     LC="Brown Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41290"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41180"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40870"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41010"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41480"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40090"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41500"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41460"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41440"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41310"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40360"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41320"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41210"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40530"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41220"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40660"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40800"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40710"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40460"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40730"); }
+                    else if (station == 20) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40040"); }
+                    else if (station == 21) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40160"); }
+                    else if (station == 22) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40850"); }
+                    else if (station == 23) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40680"); }
+                    else if (station == 24) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41700"); }
+                    else if (station == 25) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40260"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
 
                 }
                 else if (lineColor==3) { //Green Line
@@ -85,6 +174,35 @@ public class Arrivals extends AppCompatActivity {
                     //SEHead.setText("Service toward 63rd St");
                     LC="Green Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40020"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41350"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40610"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41260"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40280"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40700"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40480"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40030"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41670"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41070"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41360"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40170"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41510"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41160"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40260"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41700"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40680"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41400"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41690"); }
+                    else if (station == 20) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41120"); }
+                    else if (station == 21) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40300"); }
+                    else if (station == 22) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41270"); }
+                    else if (station == 23) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41080"); }
+                    else if (station == 24) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40130"); }
+                    else if (station == 25) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40510"); }
+                    else if (station == 26) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40940"); }
+                    else if (station == 27) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40290"); }
+                    else if (station == 28) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41140"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40720"); }
 
                 }
                 else if (lineColor==4) { //Orange Line
@@ -92,6 +210,20 @@ public class Arrivals extends AppCompatActivity {
                    // SEHead.setText("Service toward Midway");
                     LC="Orange Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40930"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40960"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40310"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40120"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41060"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41130"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41400"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40850"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40160"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40040"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40730"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40260"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41700"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40680"); }
 
                 }
                 else if (lineColor==5) { //Pink Line
@@ -99,6 +231,26 @@ public class Arrivals extends AppCompatActivity {
                     //NWHead.setText("Service toward Loop");
                     //SEHead.setText("Service toward 54th/Cermak");
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40580"); }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40420"); }
+                    else if (station == 2) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40600"); }
+                    else if (station == 3) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40780"); }
+                    else if (station == 4) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41040"); }
+                    else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40440"); }
+                    else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40740"); }
+                    else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40210"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40830"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41030"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40170"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41510"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41160"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40260"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41700"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40680"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40850"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40160"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40040"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40730"); }
 
                 }
                 else if (lineColor == 6) { //Purple Line
@@ -113,17 +265,35 @@ public class Arrivals extends AppCompatActivity {
                     else if (station == 5) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40690"); }
                     else if (station == 6) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40270"); }
                     else if (station == 7) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40840"); }
-                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40900"); }
+                    else if (station == 8) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40900"); }
+                    else if (station == 9) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40540"); }
+                    else if (station == 10) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41320"); }
+                    else if (station == 11) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41210"); }
+                    else if (station == 12) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40530"); }
+                    else if (station == 13) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41220"); }
+                    else if (station == 14) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40660"); }
+                    else if (station == 15) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40800"); }
+                    else if (station == 16) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40710"); }
+                    else if (station == 17) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40460"); }
+                    else if (station == 18) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40380"); }
+                    else if (station == 19) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40260"); }
+                    else if (station == 20) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41700"); }
+                    else if (station == 21) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40680"); }
+                    else if (station == 22) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40850"); }
+                    else if (station == 23) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40160"); }
+                    else if (station == 24) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40040"); }
+                    else { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40730"); }
                 } else { //Yellow Line
                     //NWHead.setText("Service toward Dempster-Skokie");
                     //SEHead.setText("Service toward Howard");
                     LC="Yellow Line #";
                     if (station == 0) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40140"); }
-                    else if (station == 1) { APIURL = "https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41680"; }
+                    else if (station == 1) { APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41680"); }
                     else{ APIURL = ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=40900"); }
 
                 }
-                URL url = new URL(APIURL);
+                 URL url = new URL(APIURL);
+                //URL url = new URL ("https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=55c7c1816b414f289f942796bf9b309f&outputType=JSON&mapid=41680");
                 //Log.i("URL", APIURL);
                 urlConnection = (HttpsURLConnection)
                         url.openConnection();
@@ -165,10 +335,31 @@ public class Arrivals extends AppCompatActivity {
             System.out.println("Preparsed JSON object " + resultObject.toString());
             // set up json Array to be parsed
             jsonArray = resultObject.optJSONArray("ctatt/eta");
+            String name = resultObject.getString("ctatt");
+            String arr[] = name.split("\\\"staId\\\"");
+            System.out.println(arr[1].substring(0));
+            String spl1[] = arr[1].split("\\\"rn\\\":\\\"");
+            String spl1a[] = spl1[1].split("\\\"");
+            System.out.println("spl1a "+spl1a[0]);
+            String spl2[] = arr[1].split("\\\"destNm\\\":\\\"");
+            String spl2a[] = spl2[1].split("\\\"");
+            System.out.println("spl2a "+spl2a[0]);
+            String spl3[] = arr[1].split("\\\"arrT\\\":\\\"");
+            String spl3a[] = spl3[1].split("T");
+            String spl3b[] = spl3a[1].split("\\\"");
+            System.out.println("spl3b "+spl3b[0]);
+            //arr = name.split("\\\"stpId\\\"");
+            //System.out.println(arr[1].substring(0));
+            //way to split string between certain chars? All data is between { }
+            //recursive string splits????
+
         } catch (JSONException e) { e.printStackTrace(); }
-        for(int i = 0; i < jsonArray.length(); i++){
+        //for(int i = 0; i < jsonArray.length(); i++){
             JSONObject jsonChildNode = null;
-            try { jsonChildNode = jsonArray.getJSONObject(i);
+            //String name = resultObject.getString("ctatt");
+            //String arr[] = name.split("\\\"staId\\\"");
+
+            try { jsonChildNode = jsonArray.getJSONObject(jsonArray.length());
                 //get all data from stream
                 String stopstaId = jsonChildNode.getString("staId");
                 String stopstpId = jsonChildNode.getString("stpId");
@@ -182,7 +373,7 @@ public class Arrivals extends AppCompatActivity {
                 newItemObject = new ItemObject(stopstaId, stopstpId, stopstaNm, stopstpDe, stoprn, stoprt, stopdestNm, stoparrT, stopisApp);
                 jsonObject.add(newItemObject);
             } catch (JSONException e) { e.printStackTrace(); }
-        }
+        //}
         return jsonObject;
     } //End List
 
