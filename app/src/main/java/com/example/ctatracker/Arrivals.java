@@ -37,14 +37,17 @@ public class Arrivals extends AppCompatActivity {
     private String LC;
     private int lineColor;
     private int station;
+    private Context mContext;
+    private LayoutInflater mInflator;
+    private DataSource mDataSource;
     String NWHead;
     String SEHead;
-    private DataSource mDataSource;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        stops=findViewById(R.id.listView);
+        ListView mListView = findViewById(R.id.listView);
+        mListView.setAdapter(new times(this));
         Intent i = getIntent();
         mDataSource = new DataSource();
         lineColor = i.getIntExtra("lineColor", 0);
@@ -321,10 +324,15 @@ public class Arrivals extends AppCompatActivity {
             List<ItemObject> parsedObject = returnParsedJsonObject(result);
             CustomAdapter jsonCustomAdapter = new CustomAdapter(Arrivals.this, parsedObject);
             stops.setAdapter(jsonCustomAdapter);
-
-
         }
     }//End AsyncData
+    String spl1[];
+    String spl1a[]; //rn
+    String spl2[];
+    String spl2a[]; //destNm
+    String spl3[];
+    String spl3a[];
+    String spl3b[]; //arrT
     private List<ItemObject> returnParsedJsonObject(String result){
         List<ItemObject> jsonObject = new ArrayList<ItemObject>();
         JSONObject resultObject = null;
@@ -338,15 +346,15 @@ public class Arrivals extends AppCompatActivity {
             String name = resultObject.getString("ctatt");
             String arr[] = name.split("\\\"staId\\\"");
             System.out.println(arr[1].substring(0));
-            String spl1[] = arr[1].split("\\\"rn\\\":\\\"");
-            String spl1a[] = spl1[1].split("\\\"");
+            spl1 = arr[1].split("\\\"rn\\\":\\\"");
+            spl1a = spl1[1].split("\\\"");
             System.out.println("spl1a "+spl1a[0]);
-            String spl2[] = arr[1].split("\\\"destNm\\\":\\\"");
-            String spl2a[] = spl2[1].split("\\\"");
+            spl2 = arr[1].split("\\\"destNm\\\":\\\"");
+            spl2a = spl2[1].split("\\\"");
             System.out.println("spl2a "+spl2a[0]);
-            String spl3[] = arr[1].split("\\\"arrT\\\":\\\"");
-            String spl3a[] = spl3[1].split("T");
-            String spl3b[] = spl3a[1].split("\\\"");
+            spl3 = arr[1].split("\\\"arrT\\\":\\\"");
+            spl3a = spl3[1].split("T");
+            spl3b = spl3a[1].split("\\\"");
             System.out.println("spl3b "+spl3b[0]);
             //arr = name.split("\\\"stpId\\\"");
             //System.out.println(arr[1].substring(0));
@@ -356,10 +364,12 @@ public class Arrivals extends AppCompatActivity {
         } catch (JSONException e) { e.printStackTrace(); }
         //for(int i = 0; i < jsonArray.length(); i++){
             JSONObject jsonChildNode = null;
+        newItemObject = new ItemObject("a","a","a","a", spl1a[0],"a",spl2a[0],spl3b[0],"a");
+        jsonObject.add(newItemObject);
             //String name = resultObject.getString("ctatt");
             //String arr[] = name.split("\\\"staId\\\"");
 
-            try { jsonChildNode = jsonArray.getJSONObject(jsonArray.length());
+           /* try { jsonChildNode = jsonArray.getJSONObject(jsonArray.length());
                 //get all data from stream
                 String stopstaId = jsonChildNode.getString("staId");
                 String stopstpId = jsonChildNode.getString("stpId");
@@ -370,9 +380,10 @@ public class Arrivals extends AppCompatActivity {
                 String stopdestNm = jsonChildNode.getString("destNm");
                 String stoparrT = jsonChildNode.getString("arrT");
                 String stopisApp = jsonChildNode.getString("isApp");
+
                 newItemObject = new ItemObject(stopstaId, stopstpId, stopstaNm, stopstpDe, stoprn, stoprt, stopdestNm, stoparrT, stopisApp);
                 jsonObject.add(newItemObject);
-            } catch (JSONException e) { e.printStackTrace(); }
+            } catch (JSONException e) { e.printStackTrace(); }*/
         //}
         return jsonObject;
     } //End List
@@ -383,6 +394,12 @@ public class Arrivals extends AppCompatActivity {
         public times(Context context, List<ItemObject>  customizedListView) {
             lInflater =(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             listStorage = customizedListView;
+        }
+        public times(Context c) {
+            mContext = c;
+            mInflator = (LayoutInflater)
+                    mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mDataSource = new DataSource();
         }
         @Override
         public int getCount() { return listStorage.size(); }
@@ -395,20 +412,26 @@ public class Arrivals extends AppCompatActivity {
             TextView destination;
             TextView trainnum;
             TextView minsout;
-            TextView header;
-            TextView headerSE;
+           // TextView header;
+            //TextView headerSE;
+
             if (convertView == null) { convertView = lInflater.inflate(R.layout.list, parent, false); }
             destination=convertView.findViewById(R.id.destView);
             trainnum=convertView.findViewById(R.id.trainNoView);
             minsout=convertView.findViewById(R.id.timeView);
-            header=convertView.findViewById(R.id.headerView);
-            headerSE=convertView.findViewById(R.id.headerViewSE);
-            header.setText(NWHead);
-            headerSE.setText(SEHead);
+            System.out.println("HERES A FUCKING NUMBER "+listStorage.size());
+            //header=convertView.findViewById(R.id.headerView);
+            //headerSE=convertView.findViewById(R.id.headerViewSE);
+            //header.setText(NWHead);
+            //headerSE.setText(SEHead);
+            //destination.setText(spl2a[0]);
+            //trainnum.setText(LC+spl1a[0]+" to");
+            //minsout.setText(spl3b[0]);
             destination.setText(listStorage.get(position).getDestNm());
-            trainnum.setText(LC+listStorage.get(position).getRn()+" to");
+            trainnum.setText(listStorage.get(position).getRn());
             minsout.setText(listStorage.get(position).getArrT());
-            Log.i("Data ",listStorage.get(position).getDestNm());
+            //Log.i("Data ",listStorage.get(position).getDestNm());
+
             //if((listStorage.get(position).getIsApp()).equals("1"))minsout.setText("Due");
             /*else{
                 //Get current time in 24HR format and subtract that from arrT
@@ -440,29 +463,7 @@ public class Arrivals extends AppCompatActivity {
                 int d;
                 minsout.setText();
             }*/
-
-
             return convertView;
         }
     }//End times BaseAdapter
-
-
-
     }//End Arrivals
-
-
-
-
-
-
-/*if purple lc=6
-    if central stop=1
-        API call
-        if stpid==north
-            show time
-        else
-            show time
-    else if noyes stop=2
-        API call
-        if stpid==north
-        else*/
