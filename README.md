@@ -1,0 +1,2 @@
+# CTATracker
+This was a final project for ITMD-455 Intelligent Device Apps Android. The goal was to make a functioning 3-screen app which will pull data from an API. I chose to use CTA's Train Tracker API to make a sort-of sidegrade to the existing Ventra app. Unfortuanally, I never got the final version to totally work, as the information does not show up on the last screen, but it does pull all information (though it can be made to function much better).
