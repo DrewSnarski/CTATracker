@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        // Run on a build agent where we have the Android SDK installed
-        label 'android'
-    }
+   
   stages {
         stage('Start Build') {
             steps {
