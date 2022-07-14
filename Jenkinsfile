@@ -5,7 +5,7 @@ pipeline {
     stage('Build App') {
             steps {
                 script {
-                        sh './gradlew bundleUpload'          
+                        sudo sh './gradlew bundleUpload'          
                 }
             }
         }
