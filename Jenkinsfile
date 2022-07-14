@@ -1,11 +1,7 @@
 pipeline {
     agent any
   stages {
-        stage('Start Build') {
-            steps {
-                bitbucketStatusNotify(buildState: 'INPROGRESS')
-            }
-        }
+        
     stage('Build App') {
             steps {
                 // Clean and assemble APKs
