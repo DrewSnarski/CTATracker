@@ -5,7 +5,7 @@ pipeline {
     stage('Build App') {
             steps {
                 script {
-                    chmod +x gradlew
+                    git update-index --chmod=+x gradlew
                          sh './gradlew assembleDebug'          
                 }
             }
