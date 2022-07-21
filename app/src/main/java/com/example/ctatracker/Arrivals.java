@@ -47,7 +47,7 @@ public class Arrivals extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView mListView = findViewById(R.id.listView);
-        mListView.setAdapter(new times(this));
+       // mListView.setAdapter(new times(this));
         Intent i = getIntent();
         mDataSource = new DataSource();
         lineColor = i.getIntExtra("lineColor", 0);
@@ -323,7 +323,7 @@ public class Arrivals extends AppCompatActivity {
             System.out.println("Result on post execute: " + result);
             List<ItemObject> parsedObject = returnParsedJsonObject(result);
             CustomAdapter jsonCustomAdapter = new CustomAdapter(Arrivals.this, parsedObject);
-            stops.setAdapter(jsonCustomAdapter);
+            //stops.setAdapter(jsonCustomAdapter);
         }
     }//End AsyncData
     String spl1[];
@@ -365,7 +365,7 @@ public class Arrivals extends AppCompatActivity {
         //for(int i = 0; i < jsonArray.length(); i++){
             JSONObject jsonChildNode = null;
         newItemObject = new ItemObject("a","a","a","a", spl1a[0],"a",spl2a[0],spl3b[0],"a");
-        jsonObject.add(newItemObject);
+        //jsonObject.add(newItemObject);
             //String name = resultObject.getString("ctatt");
             //String arr[] = name.split("\\\"staId\\\"");
 

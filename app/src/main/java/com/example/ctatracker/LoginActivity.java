@@ -22,11 +22,11 @@ public class LoginActivity extends AppCompatActivity {
     public void onClick(View view) {
 
         System.out.print("Drew S");
-        String uname = "drews", pass = "password";
+        String uname = "asnarski1@hawk.iit.edu", pass = "password";
         EditText name, word;
         name = findViewById(R.id.textUserName);
         word = findViewById(R.id.textPassword);
-
+        boolean isValid = Utils.checkEmailForValidity(name.toString());
         if((uname.equals(name.getText().toString()) && (pass.equals(word.getText().toString())))){
             Toast t = Toast.makeText(getApplicationContext(), "Redirecting...", Toast.LENGTH_SHORT);
             t.show();
