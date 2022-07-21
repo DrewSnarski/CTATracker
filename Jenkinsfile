@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage ('Test App'){
           steps{
-            scrpit{
+            script{
                      sh 'chmod +x gradlew'
                      sh './gradlew test'
             }
