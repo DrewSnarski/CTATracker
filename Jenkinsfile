@@ -1,7 +1,14 @@
 pipeline {
     agent any
   stages {
-        
+      stage ('Test App'){
+          steps{
+            scrpit{
+                     sh 'chmod +x gradlew'
+                     sh './gradlew test'
+            }
+          }
+      }
     stage('Build App') {
             steps {
                 script {
